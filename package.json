@@ -1,6 +1,6 @@
 {
   "name": "col-pci-wc",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -24,7 +24,7 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
-    "unpublish-components": "npm unpublish @collinson/pci-components --force",
+    "unpublish-components": "npm unpublish col-pci-wc --force",
     "update-version": "npm version patch --force",
     "publish-components": "npm run build && npm run update-version && npm run unpublish-components && npm publish"
   },
