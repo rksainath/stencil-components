@@ -6,56 +6,104 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface ConfirmationSummary {
+        "contentData": any;
+        "languageCode": string;
+    }
+    interface LkHoc {
+        "languageCode": string;
+        "selectedComponent": string;
+    }
+    interface MyDetails {
+        "contentData": any;
+        "languageCode": string;
+    }
+    interface PersonalDetails {
+        "contentData": any;
+        "languageCode": string;
+    }
+    interface ValidateCard {
+        "contentData": any;
+        "languageCode": string;
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLConfirmationSummaryElement extends Components.ConfirmationSummary, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLConfirmationSummaryElement: {
+        prototype: HTMLConfirmationSummaryElement;
+        new (): HTMLConfirmationSummaryElement;
+    };
+    interface HTMLLkHocElement extends Components.LkHoc, HTMLStencilElement {
+    }
+    var HTMLLkHocElement: {
+        prototype: HTMLLkHocElement;
+        new (): HTMLLkHocElement;
+    };
+    interface HTMLMyDetailsElement extends Components.MyDetails, HTMLStencilElement {
+    }
+    var HTMLMyDetailsElement: {
+        prototype: HTMLMyDetailsElement;
+        new (): HTMLMyDetailsElement;
+    };
+    interface HTMLPersonalDetailsElement extends Components.PersonalDetails, HTMLStencilElement {
+    }
+    var HTMLPersonalDetailsElement: {
+        prototype: HTMLPersonalDetailsElement;
+        new (): HTMLPersonalDetailsElement;
+    };
+    interface HTMLValidateCardElement extends Components.ValidateCard, HTMLStencilElement {
+    }
+    var HTMLValidateCardElement: {
+        prototype: HTMLValidateCardElement;
+        new (): HTMLValidateCardElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "confirmation-summary": HTMLConfirmationSummaryElement;
+        "lk-hoc": HTMLLkHocElement;
+        "my-details": HTMLMyDetailsElement;
+        "personal-details": HTMLPersonalDetailsElement;
+        "validate-card": HTMLValidateCardElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface ConfirmationSummary {
+        "contentData"?: any;
+        "languageCode"?: string;
+    }
+    interface LkHoc {
+        "languageCode"?: string;
+        "selectedComponent"?: string;
+    }
+    interface MyDetails {
+        "contentData"?: any;
+        "languageCode"?: string;
+    }
+    interface PersonalDetails {
+        "contentData"?: any;
+        "languageCode"?: string;
+    }
+    interface ValidateCard {
+        "contentData"?: any;
+        "languageCode"?: string;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "confirmation-summary": ConfirmationSummary;
+        "lk-hoc": LkHoc;
+        "my-details": MyDetails;
+        "personal-details": PersonalDetails;
+        "validate-card": ValidateCard;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "confirmation-summary": LocalJSX.ConfirmationSummary & JSXBase.HTMLAttributes<HTMLConfirmationSummaryElement>;
+            "lk-hoc": LocalJSX.LkHoc & JSXBase.HTMLAttributes<HTMLLkHocElement>;
+            "my-details": LocalJSX.MyDetails & JSXBase.HTMLAttributes<HTMLMyDetailsElement>;
+            "personal-details": LocalJSX.PersonalDetails & JSXBase.HTMLAttributes<HTMLPersonalDetailsElement>;
+            "validate-card": LocalJSX.ValidateCard & JSXBase.HTMLAttributes<HTMLValidateCardElement>;
         }
     }
 }

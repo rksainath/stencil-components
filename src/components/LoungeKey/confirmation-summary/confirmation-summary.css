@@ -1,0 +1,27 @@
+/* confirmation.css */
+.confirmation {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.confirmation h2 {
+  color: #333;
+}
+
+.confirmation-details p {
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
